@@ -1,0 +1,71 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #4caf50; /* Verde de progreso */
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+.xp-text {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.value-with-icon {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  gap: 0.3rem;             
+}
+
+.icon {
+  width: 20px;           
+  height: 20px;
+  display: block;
+}
+
+
+.icon[alt="Coins"] {
+  filter: brightness(0.9) sepia(1) hue-rotate(30deg) saturate(5);
+}
+
+.icon[alt="Streak"] {
+  filter: brightness(1) sepia(1) hue-rotate(-20deg) saturate(5);
+}
