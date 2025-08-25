@@ -1,13 +1,8 @@
-# Guía de Contribución
+# Contribution Guide
 
-## Cómo contribuir
-1. Haz fork del proyecto
-2. Crea una rama para tu feature: `git checkout -b feature/nueva-feature`
-3. Commit tus cambios: `git commit -m 'Agrega nueva feature'`
-4. Push a la rama: `git push origin feature/nueva-feature`
-5. Abre un Pull Request
-
-## Estándares de código
-- Sigue las convenciones existentes
-- Asegúrate de que los tests pasen
-- Actualiza la documentación si es necesario
+## How to contribute
+1. Fork the project
+2. Create a branch for your feature: `git checkout -b feature/new-feature`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Open a Pull Request
