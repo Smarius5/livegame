@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import './components/Header.css'
+import HabitForm from './components/HabitForm';
+import './components/HabitForm.css'
 
 function App() {
-  //Mocking
+  
   const [playerStats, setPlayerStats] = useState({
     level: 1,
     xp: 0,
@@ -13,6 +15,12 @@ function App() {
   });
   const [habits, setHabits] = useState([]);
 
+  //Add new habits
+
+  const handleAddHabit = (newHabit) => {
+    setHabits([...habits, newHabit]);
+  };
+  
   // Add XP and coins function
   const addXpAndCoins = (xpEarned, coinsEarned) => {
     setPlayerStats(prevStats => ({
@@ -30,6 +38,8 @@ function App() {
         coins={playerStats.coins}
         streak={playerStats.streak}
       />
+      
+      <HabitForm onAddHabit={handleAddHabit} />
 
     </div>
   );
