@@ -55,7 +55,6 @@ What thing you need to install the software and how to install them
 git clone https://github.com/Smarius5/livegame.git
 cd livegame
 npm install # or yarn install
-
 ```
 
 #### Start the project
